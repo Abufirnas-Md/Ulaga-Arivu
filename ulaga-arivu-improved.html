@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>உலக அறிவு | ULAGA ARIVU</title>
+<meta name="description" content="Learn practical real-world knowledge in simple Tamil and English: banking, money, digital safety, documents, work, consumer rights and more.">
+<meta name="theme-color" content="#faf6ee">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;700&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6ee;--card:#fff;--ink:#14213d;--mut:#55607a;--teal:#0f766e;--teal2:#e0f2ef;--or:#c2410c;--or2:#fdeee4;--line:#e6dfd0;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.75 "Noto Sans Tamil",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:"Noto Serif Tamil",Georgia,serif;line-height:1.35;margin:.2em 0 .4em}
+a{color:var(--teal)}button{font:inherit;cursor:pointer}button:disabled{cursor:not-allowed;opacity:.75}.skip-link{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;padding:10px 14px;border:2px solid var(--or);border-radius:8px}.skip-link:focus{left:8px}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,238,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;min-height:66px}
+.logo{font-family:"Noto Serif Tamil",serif;font-weight:700;font-size:1.25rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{width:32px;height:32px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-style:normal;font-size:1rem}
+.logo small{display:block;font:500 .65rem/1 system-ui;letter-spacing:.12em;color:var(--mut)}
+nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+nav a{padding:8px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:.95rem}
+nav a:hover,nav a.on{background:var(--teal2);color:var(--teal)}
+.btn{display:inline-block;border:0;border-radius:999px;padding:11px 22px;background:var(--teal);color:#fff;font-weight:700;text-decoration:none}
+.btn:hover{background:#0b5c56}.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.sm{padding:6px 14px;font-size:.9rem}
+.ic{background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}
+#menu{display:none}
+@media(max-width:860px){#menu{display:block;margin-left:auto}nav{display:none;position:absolute;top:66px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;padding:12px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}.bar .rt{margin-left:0}}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:56px 0}
+.hero h1{font-size:clamp(1.8rem,4vw,2.8rem)}.hero p{color:var(--mut);max-width:60ch}
+.tag{display:inline-block;background:var(--or2);color:var(--or);padding:4px 14px;border-radius:99px;font-weight:700;font-size:.9rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding:32px 0}}
+section.s{padding:36px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:0 2px 10px rgba(20,33,61,.05);color:inherit;text-decoration:none;display:block;text-align:left;width:100%}
+a.card:hover,button.card:hover{border-color:var(--teal);transform:translateY(-2px)}
+.card{transition:transform .2s,border-color .2s}
+.card .e{font-size:1.8rem}.card p{color:var(--mut);margin:.2em 0 .6em;font-size:.95rem}
+.more{color:var(--teal);font-weight:700;font-size:.92rem}
+.meta{font-size:.85rem;color:var(--mut)}
+.pill{background:var(--teal2);color:var(--teal);border-radius:99px;padding:2px 10px;font-size:.8rem;font-weight:700}
+.pill.o{background:var(--or2);color:var(--or)}
+.daily{background:var(--ink);color:#fff;border-radius:20px;padding:30px;display:grid;gap:8px}
+.daily p{color:#d5dbea}.daily .btn{background:var(--or);justify-self:start}
+.qa details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 18px;margin-bottom:10px}
+.qa summary{font-weight:700;cursor:pointer}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+input,select{font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input[type=search]{flex:1;min-width:200px}
+.lesson{max-width:780px;margin:auto;padding:30px 0}
+.lesson h2{font-size:1.3rem;margin-top:1.6em;border-left:5px solid var(--teal);padding-left:12px}
+.box{border-radius:var(--r);padding:14px 18px;margin:12px 0}.box.w{background:var(--or2);border:1px solid #f3c9ae}.box.g{background:var(--teal2)}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;font-size:.95rem}
+td,th{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}th{background:var(--teal2)}
+.tw{overflow-x:auto}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
+.opt:hover:not(:disabled){border-color:var(--teal)}.opt.ok{border-color:#15803d;background:#dcfce7}.opt.no{border-color:#b91c1c;background:#fee2e2}
+.prog{height:10px;background:var(--line);border-radius:9px;overflow:hidden}.prog i{display:block;height:100%;background:var(--teal)}
+footer{background:var(--ink);color:#cfd6e6;margin-top:50px;padding:40px 0 20px;font-size:.92rem}
+footer a{color:#fff}.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.crumb{font-size:.9rem;margin-bottom:6px}
+.hero svg{width:100%;height:auto}
+@media(max-width:520px){body{font-size:16px}.wrap{padding:0 14px}.hero{gap:18px}.hero svg{max-width:300px;margin:auto}.card{padding:16px}.daily{padding:22px}.tools{display:grid;grid-template-columns:1fr}.tools input,.tools select{width:100%;min-width:0}.lesson{padding:20px 0}td,th{padding:7px;font-size:.88rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><div class="wrap bar">
+ <a class="logo" href="#/"><i>உ</i><span>உலக அறிவு<small>ULAGA ARIVU</small></span></a>
+ <button id="menu" class="ic" aria-label="Menu" aria-expanded="false">☰</button>
+ <nav id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main" class="wrap" tabindex="-1"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+/* ---------- DATA (edit here to add lessons) ---------- */
+const CATS=[
+["money","💰",["பணம் மற்றும் வங்கிகள்","Money & Banking"],["வங்கி, சேமிப்பு, கடன், UPI","Banks, savings, loans, UPI"]],
+["psych","🧠",["மனித உளவியல்","Human Psychology"],["உணர்வுகள், நம்பிக்கை, தொடர்பு","Emotions, trust, communication"]],
+["digital","🔐",["டிஜிட்டல் பாதுகாப்பு","Digital Safety"],["OTP, மோசடிகள், கடவுச்சொல்","OTP, scams, passwords"]],
+["daily","🏠",["அன்றாட வாழ்க்கை அறிவு","Everyday Life"],["பில், GST, வாடகை, முதலுதவி","Bills, GST, rent, first aid"]],
+["docs","🪪",["அரசு ஆவணங்கள்","Government Documents"],["ஆதார், PAN, DigiLocker, KYC","Aadhaar, PAN, DigiLocker, KYC"]],
+["work","💼",["வேலை மற்றும் தொழில் உலகம்","Work & Career"],["சம்பளம், CTC, நேர்காணல்","Salary, CTC, interviews"]],
+["consumer","🛒",["நுகர்வோர் உரிமைகள்","Consumer Rights"],["Warranty, refund, புகார்","Warranty, refunds, complaints"]],
+["economy","🌍",["உலகம் மற்றும் பொருளாதாரம்","World & Economy"],["தேவை-வழங்கல், வரி, விலை","Supply, demand, tax, prices"]],
+["comm","🗣️",["தொடர்புத் திறன்கள்","Communication Skills"],["அமைதியான உரையாடல், மின்னஞ்சல்","Calm talk, email etiquette"]],
+["tech","🔬",["அறிவியல் மற்றும் தொழில்நுட்பம்","Science & Technology"],["AI, இணையம், தகவல் சரிபார்ப்பு","AI, internet, fact-checking"]]];
+const L=[ // [id,cat,level,min,title,intro,definition,why,steps,example,mistakes,safety,summary,quiz,sources]
+{id:"bank",cat:"money",lv:0,min:4,
+t:["வங்கி என்ன செய்கிறது?","What does a bank do?"],
+i:["வங்கி என்பது உங்கள் பணத்தைப் பாதுகாப்பாக வைத்து, தேவைப்படுவோருக்குக் கடன் கொடுக்கும் நிறுவனம்.","A bank keeps your money safe and lends it to people who need it."],
+d:["வங்கி (Bank) என்பது டெபாசிட் பெற்று, கடன் வழங்கி, பணம் அனுப்பும் சேவைகளைத் தரும் உரிமம் பெற்ற நிதி நிறுவனம்.","A bank is a licensed institution that accepts deposits, gives loans and offers payment services."],
+w:["வீட்டில் பணம் வைத்தால் திருட்டு, தீ, தவறான செலவு ஆபத்துகள் உண்டு. வங்கியில் பணம் பாதுகாப்பாக இருக்கும், வட்டியும் கிடைக்கும்.","Cash at home can be stolen or burnt. A bank keeps it safe and may pay interest."],
+s:[["நீங்கள் பணத்தை வங்கியில் டெபாசிட் செய்கிறீர்கள்.","You deposit money in the bank."],["வங்கி அந்தப் பணத்தில் ஒரு பகுதியை மற்றவர்களுக்குக் கடனாகக் கொடுக்கிறது.","The bank lends a part of it to others."],["கடன் வாங்குவோர் செலுத்தும் வட்டியிலிருந்து, உங்களுக்குச் சிறிய வட்டி கிடைக்கிறது.","Borrowers pay interest; you receive a smaller share as interest."]],
+e:["முருகன் மாதம் ₹2,000 சேமிப்புக் கணக்கில் போடுகிறார். ஆண்டு முடிவில் ₹24,000 மற்றும் சிறிய வட்டி கிடைக்கும். வட்டி விகிதம் வங்கிக்கு வங்கி மாறும்.","Murugan saves ₹2,000 a month. After a year he has ₹24,000 plus a little interest. Rates differ between banks."],
+m:[["பதிவு செய்யப்படாத நிறுவனங்களில் பணம் போடுவது.","Depositing with unregistered firms."],["ATM PIN-ஐ எழுதி வைப்பது.","Writing the ATM PIN down."]],
+f:["வங்கி RBI-ஆல் அங்கீகரிக்கப்பட்டதா என்று சரிபார்க்கவும். இது பொதுக் கல்வி மட்டுமே, நிதி ஆலோசனை அல்ல.","Check that a bank is regulated by RBI. This is general education, not financial advice."],
+u:["வங்கி பணத்தைப் பாதுகாக்கிறது, கடன் கொடுக்கிறது, பணப் பரிமாற்றத்தை எளிதாக்குகிறது.","Banks protect money, lend it and make payments easy."],
+src:[["RBI","https://www.rbi.org.in"]]},
+{id:"cards",cat:"money",lv:0,min:5,
+t:["Debit Card மற்றும் Credit Card — என்ன வித்தியாசம்?","Debit Card vs Credit Card — what is the difference?"],
+i:["இரண்டும் பார்க்க ஒன்றுபோல் இருக்கும்; ஆனால் செயல்பாடு முற்றிலும் வேறு.","They look alike but work very differently."],
+d:["Debit Card உங்கள் வங்கிக் கணக்கில் உள்ள பணத்தைப் பயன்படுத்தும். Credit Card ஒப்புதல் பெற்ற வரம்புக்குள் வங்கியிடம் கடன் வாங்கி, விதிகளின்படி திருப்பிச் செலுத்த உதவும்.","A debit card spends money already in your account. A credit card lets you borrow within an approved limit and repay as per its terms."],
+w:["தவறான பயன்பாடு கடன் சுமைக்கு வழிவகுக்கும். வித்தியாசம் தெரிந்தால் வட்டி, அபராதம் தவிர்க்கலாம்.","Misuse can create debt. Knowing the difference helps avoid interest and penalties."],
+s:[["Debit: பொருள் வாங்கியதும் கணக்கிலிருந்து பணம் உடனே குறையும்.","Debit: money leaves your account immediately."],["Credit: வங்கி முதலில் செலுத்தும்; பில் தேதியில் நீங்கள் திருப்பிச் செலுத்த வேண்டும்.","Credit: the bank pays first; you repay by the due date."],["முழுத் தொகையையும் குறித்த தேதிக்குள் செலுத்தாவிட்டால் வட்டி மற்றும் கட்டணங்கள் சேரும் (வங்கி விதிகளைப் பொறுத்தது).","If not paid in full on time, interest and fees apply (depends on issuer)."]],
+e:["ப்ரியாவின் கணக்கில் ₹10,000 உள்ளது. Debit Card-ல் ₹3,000 செலவழித்தால் ₹7,000 மிஞ்சும். Credit Card-ல் ₹3,000 செலவழித்தால் கணக்குப் பணம் குறையாது; ஆனால் பில்லில் ₹3,000 வரும்.","Priya has ₹10,000. A ₹3,000 debit purchase leaves ₹7,000. A ₹3,000 credit purchase leaves her balance unchanged, but a ₹3,000 bill arrives."],
+m:[["Minimum due மட்டும் செலுத்துவது எளிது என்று நினைப்பது — மீதிக்கு வட்டி சேரும்.","Paying only the minimum due; the rest attracts interest."],["Credit limit முழுவதையும் செலவழிப்பது.","Using the entire credit limit."]],
+f:["Credit Card அனைவருக்கும் பொருந்தாது. கட்டணங்கள் வங்கிக்கு வங்கி மாறும்; உங்கள் கார்டு விதிகளைப் படியுங்கள்.","Credit cards are not for everyone. Charges vary; read your card terms."],
+u:["Debit = உங்கள் பணம்; Credit = கடன் வாங்கிய பணம், திருப்பிச் செலுத்த வேண்டும்.","Debit = your money; credit = borrowed money you must repay."],
+tbl:[["","Debit","Credit"],[["பணத்தின் மூலம்","Source of money"],["உங்கள் கணக்கு","Your account"],["வங்கியின் கடன்","Bank loan"]],[["திருப்பிச் செலுத்தல்","Repayment"],["தேவையில்லை","None"],["பில் தேதிக்குள்","By due date"]],[["வட்டி/கட்டணம்","Interest & fees"],["பொதுவாக குறைவு","Usually low"],["தாமதத்தில் அதிகம்","High if late"]],[["செலவு வரம்பு","Limit"],["கணக்கு இருப்பு","Balance"],["Credit limit","Credit limit"]],[["ஆபத்து","Risk"],["கணக்குப் பணம் இழப்பு","Loss of own money"],["கடன் சுமை","Debt trap"]]],
+src:[["RBI","https://www.rbi.org.in"]]},
+{id:"emi",cat:"money",lv:1,min:4,
+t:["EMI, அசல், வட்டி — எளிய விளக்கம்","EMI, principal and interest explained"],
+i:["கடன் வாங்கினால் மாதம் மாதம் செலுத்தும் தொகையே EMI.","EMI is the fixed amount you pay each month on a loan."],
+d:["EMI (Equated Monthly Instalment) = அசலின் (Principal) ஒரு பகுதி + வட்டி (Interest).","EMI = part of the principal + interest."],
+w:["EMI குறைவாகத் தெரிந்தாலும் மொத்தமாகச் செலுத்தும் தொகை அதிகமாக இருக்கலாம்.","A small EMI can still mean a large total cost."],
+s:[["கடன் தொகை, வட்டி விகிதம், காலம் ஆகியவற்றைப் பாருங்கள்.","Note amount, rate and tenure."],["மொத்த செலுத்தல் = EMI × மாதங்கள்.","Total paid = EMI × months."],["மொத்த செலுத்தல் − அசல் = நீங்கள் கொடுக்கும் வட்டி.","Total paid − principal = interest you pay."]],
+e:["₹60,000 கடன், 12 மாதம், EMI ₹5,500 என்றால் மொத்தம் ₹66,000. வட்டி ₹6,000. (எடுத்துக்காட்டு எண்கள் மட்டுமே.)","A ₹60,000 loan with ₹5,500 EMI for 12 months costs ₹66,000, so interest is ₹6,000. (Illustrative numbers only.)"],
+m:[["'No-cost EMI' என்றால் கட்டணமே இல்லை என்று நம்புவது.","Assuming 'no-cost EMI' has no hidden charges."],["சம்பளத்தில் பாதிக்கு மேல் EMI வைப்பது.","EMIs above half your income."]],
+f:["செயலாக்கக் கட்டணம், முன்கூட்டிச் செலுத்தும் அபராதம் பற்றி எழுத்துப்பூர்வமாகக் கேளுங்கள்.","Ask in writing about processing and prepayment charges."],
+u:["EMI = அசல் + வட்டி. மொத்தச் செலவைக் கணக்கிட்ட பின் முடிவு செய்யுங்கள்.","EMI = principal + interest. Check total cost before deciding."],src:[["RBI","https://www.rbi.org.in"]]},
+{id:"upi",cat:"digital",lv:0,min:4,
+t:["OTP, PIN மற்றும் UPI மோசடிகள்","OTP, PIN and UPI fraud"],
+i:["மோசடிக்காரர்கள் உங்கள் பயத்தையும் அவசரத்தையும் பயன்படுத்துவார்கள்.","Fraudsters exploit fear and urgency."],
+d:["OTP என்பது ஒருமுறை பயன்படும் ரகசிய எண். UPI PIN என்பது பணம் அனுப்ப மட்டும் நீங்கள் உள்ளிடும் ரகசிய எண்.","An OTP is a one-time secret code. A UPI PIN is the secret you enter only to send money."],
+w:["ஒரு OTP சொன்னாலே கணக்குப் பணம் போகலாம்.","Sharing one OTP can empty your account."],
+s:[["'பணம் பெற' ஒருபோதும் PIN தேவையில்லை — PIN அனுப்பும்போது மட்டுமே.","Receiving money never needs a PIN — only sending does."],["வங்கி ஊழியர் என்று அழைத்தால் OTP/PIN சொல்லாதீர்கள்.","Never tell a 'bank caller' your OTP/PIN."],["சந்தேகம் இருந்தால் அழைப்பை நிறுத்தி, வங்கியின் அதிகாரப்பூர்வ எண்ணை நீங்களே அழையுங்கள்.","Hang up and call the bank on its official number yourself."]],
+e:["'உங்கள் KYC காலாவதியாகிவிட்டது, இந்த லிங்க்கில் அப்டேட் செய்யுங்கள்' என்ற SMS வந்தால், அது போலி லிங்க் ஆக இருக்கலாம்.","An SMS saying 'KYC expired, update via this link' may lead to a fake site."],
+m:[["அவசரத்தில் லிங்கை அழுத்துவது.","Clicking links in a hurry."],["Screen-sharing ஆப் நிறுவச் சொன்னால் ஒப்புக்கொள்வது.","Installing a screen-sharing app on request."]],
+f:["பணம் இழந்தால் உடனே வங்கியையும் 1930 உதவி எண்ணையும் அல்லது cybercrime.gov.in-ஐயும் தொடர்பு கொள்ளுங்கள்.","If money is lost, contact your bank and the 1930 helpline or cybercrime.gov.in immediately."],
+u:["OTP, PIN, CVV யாரிடமும் பகிராதீர்கள்.","Never share OTP, PIN or CVV."],src:[["National Cyber Crime Portal","https://cybercrime.gov.in"],["RBI","https://www.rbi.org.in"]]},
+{id:"ctc",cat:"work",lv:1,min:4,
+t:["சம்பளம், CTC, Take-home — வித்தியாசம்","Salary, CTC and take-home pay"],
+i:["வேலை சலுகையில் பெரிய எண் தெரியும்; கையில் கிடைப்பது வேறு.","The offer shows a big number; your bank credit is different."],
+d:["CTC (Cost to Company) என்பது நிறுவனம் உங்களுக்காகச் செலவிடும் மொத்தத் தொகை. Take-home என்பது கழிவுகளுக்குப் பிறகு கணக்கில் வரும் தொகை.","CTC is the total cost a company bears for you. Take-home is what reaches your account after deductions."],
+w:["CTC மட்டும் பார்த்து செலவுத் திட்டம் போட்டால் பற்றாக்குறை வரும்.","Planning on CTC alone leads to shortfalls."],
+s:[["CTC-ல் உள்ள அடிப்படை, HRA, போனஸ் போன்றவற்றைப் பிரியுங்கள்.","Break CTC into basic, HRA, bonus etc."],["PF, வரி போன்ற கழிவுகளைக் கழியுங்கள்.","Subtract PF, tax and other deductions."],["மாதாந்திர Payslip-ல் சரிபார்க்கவும்.","Verify on your monthly payslip."]],
+e:["CTC ₹4,00,000 என்றால் மாதம் ₹33,333 கிடைக்கும் என்று அர்த்தமில்லை; கழிவுகளுக்குப் பின் குறைவாக இருக்கும்.","A CTC of ₹4,00,000 does not mean ₹33,333 a month in hand; it will be lower after deductions."],
+m:[["ஆஃபர் கடிதத்தைப் படிக்காமல் கையெழுத்திடுவது.","Signing without reading the offer letter."]],
+f:["வரி விதிகள் மாறும்; அதிகாரப்பூர்வ வருமான வரித் தளத்தைப் பாருங்கள்.","Tax rules change; check the official Income Tax site."],
+u:["CTC ≠ கையில் வரும் சம்பளம். Payslip-ஐ எப்போதும் சரிபாருங்கள்.","CTC ≠ in-hand pay. Always check your payslip."],src:[["Income Tax India","https://www.incometax.gov.in"]]},
+{id:"warranty",cat:"consumer",lv:0,min:3,
+t:["Warranty மற்றும் Guarantee","Warranty vs Guarantee"],
+i:["பொருள் பழுதானால் யார் பொறுப்பு என்பதை இவை சொல்கின்றன.","They say who is responsible if a product fails."],
+d:["இரண்டும் உற்பத்தியாளர்/விற்பவரின் எழுத்துப்பூர்வ உறுதிமொழிகள். விதிமுறைகள் பொருளுக்குப் பொருள் மாறும்; எனவே உங்கள் ஆவணத்தைப் படியுங்கள்.","Both are written promises by maker/seller. Terms vary, so read your document."],
+w:["பில் இல்லாமல் உரிமை கோர முடியாமல் போகலாம்.","Without the bill you may not be able to claim."],
+s:[["பில் மற்றும் Warranty அட்டையைப் பாதுகாக்கவும்.","Keep the bill and warranty card."],["என்னென்ன பழுதுகள் உள்ளடக்கம் என்று படிக்கவும்.","Read what is covered."],["பிரச்சினை வந்தால் எழுத்துப்பூர்வப் புகார் கொடுக்கவும்.","Complain in writing."]],
+e:["ரவி வாங்கிய மிக்ஸி 8 மாதத்தில் பழுதானது. பில் வைத்திருந்ததால் இலவசப் பழுதுபார்ப்பு கிடைத்தது.","Ravi's mixer failed in 8 months; because he kept the bill, repair was free."],
+m:[["பில்லைத் தூக்கி எறிவது.","Throwing away the bill."]],
+f:["தீர்வு கிடைக்கவில்லை என்றால் தேசிய நுகர்வோர் உதவி மையத்தை அணுகலாம்.","If unresolved, approach the National Consumer Helpline."],
+u:["பில் + Warranty அட்டை = உங்கள் பாதுகாப்பு.","Bill + warranty card = your protection."],src:[["Consumer Helpline","https://consumerhelpline.gov.in"]]},
+{id:"digilocker",cat:"docs",lv:0,min:3,
+t:["DigiLocker மற்றும் ஆவணப் பாதுகாப்பு","DigiLocker and protecting documents"],
+i:["முக்கிய ஆவணங்களை டிஜிட்டலாகப் பாதுகாக்கும் அரசு சேவை.","A government service for keeping documents digitally."],
+d:["DigiLocker என்பது இந்திய அரசின் டிஜிட்டல் ஆவணச் சேமிப்பு தளம்.","DigiLocker is the Government of India's digital document wallet."],
+w:["ஆவணம் தொலைந்தாலும் டிஜிட்டல் நகல் கிடைக்கும்.","You still have a copy if the original is lost."],
+s:[["அதிகாரப்பூர்வ ஆப்/தளத்தை மட்டும் பயன்படுத்துங்கள்.","Use only the official app/site."],["மொபைல் எண்ணுடன் பதிவு செய்யுங்கள்.","Register with your mobile number."],["தேவையான ஆவணங்களை இணைக்கவும்.","Link your documents."]],
+e:["மாணவி கவிதா வேலை நேர்காணலுக்கு ஆதார், மதிப்பெண் சான்றிதழை ஃபோனிலேயே காட்டினார்.","Kavitha showed Aadhaar and mark sheets from her phone at an interview."],
+m:[["ஆதார் எண்ணை சமூக வலைதளத்தில் பகிர்வது.","Posting the Aadhaar number on social media."]],
+f:["ஆவண எண்களை நம்பகமற்றவர்களுடன் பகிராதீர்கள்.","Don't share document numbers with untrusted parties."],
+u:["DigiLocker = பாதுகாப்பான டிஜிட்டல் ஆவண இடம்.","DigiLocker = a safe digital document space."],src:[["DigiLocker","https://www.digilocker.gov.in"]]},
+{id:"supply",cat:"economy",lv:1,min:3,
+t:["தேவை–வழங்கல் மற்றும் விலை மாற்றம்","Supply, demand and why prices change"],
+i:["தக்காளி விலை ஏன் ஏறி இறங்குகிறது?","Why do tomato prices rise and fall?"],
+d:["தேவை (Demand) அதிகமாகி வழங்கல் (Supply) குறைந்தால் விலை உயரும்; நேர்மாறாக விலை குறையும்.","When demand rises and supply falls, prices rise; the reverse lowers prices."],
+w:["விலை மாற்றம் புரிந்தால் வாங்கும் நேரத்தைத் திட்டமிடலாம்.","Understanding prices helps you time purchases."],
+s:[["மழை/வெள்ளத்தால் விளைச்சல் குறைகிறது.","Rain damages the harvest."],["சந்தைக்கு வரும் அளவு குறைகிறது.","Less reaches the market."],["விலை உயர்கிறது.","Prices rise."]],
+e:["மழைக்காலத்தில் காய்கறி விலை உயர்வதும், அறுவடைக் காலத்தில் குறைவதும் இதனால்தான்.","Vegetables cost more in rains and less at harvest for this reason."],
+m:[["ஒரு காரணத்தை மட்டும் குற்றம் சொல்வது.","Blaming only one cause."]],
+f:["இது எளிமைப்படுத்தப்பட்ட மாதிரி; உண்மை நிலை பல காரணிகளைக் கொண்டது.","A simplified model; real markets have many factors."],
+u:["தேவை↑ வழங்கல்↓ = விலை↑.","Demand up, supply down = price up."],src:[["RBI","https://www.rbi.org.in"]]},
+{id:"calm",cat:"psych",lv:0,min:3,
+t:["கருத்து வேறுபாட்டில் அமைதியாகப் பேசுவது","Talking calmly during disagreements"],
+i:["வாதத்தில் வெல்வதை விட உறவைக் காப்பது முக்கியம்.","Protecting the relationship matters more than winning."],
+d:["அமைதியான தொடர்பு என்பது உணர்ச்சியை நிர்வகித்து, கேட்டு, தெளிவாகப் பேசுவது.","Calm communication means managing emotion, listening and speaking clearly."],
+w:["தவறான சொற்கள் உறவுகளை நீண்டகாலம் பாதிக்கும்.","Harsh words can damage relationships for long."],
+s:[["ஆழ்ந்து மூச்சு விடுங்கள்.","Take a deep breath."],["'நீ' என்பதற்குப் பதில் 'நான் உணர்கிறேன்' என்று தொடங்குங்கள்.","Start with 'I feel' instead of 'you always'."],["முழுமையாகக் கேளுங்கள்.","Listen fully."]],
+e:["நண்பர் தாமதமாக வந்தபோது 'நீ எப்போதும் இப்படித்தான்' என்பதற்குப் பதில் 'காத்திருந்தபோது கவலையாக இருந்தது' என்று சொன்னால் உரையாடல் சீராகும்.","Instead of 'you are always late', say 'I felt worried while waiting'."],
+m:[["ஒருவரின் நடத்தையை வைத்து அவர் மனநிலையை உறுதியாக முடிவு செய்வது — சூழல் முக்கியம்.","Judging someone's mind from one behaviour; context matters."]],
+f:["உளவியல் குறிப்புகள் உறுதியானவை அல்ல. இது மருத்துவ ஆலோசனை அல்ல.","Psychological signals are uncertain. This is not medical advice."],
+u:["கேளுங்கள், அமைதியாகப் பேசுங்கள், முடிவுக்கு அவசரப்படாதீர்கள்.","Listen, speak calmly, don't jump to conclusions."],src:[]}
+];
+const Q=[
+[["Credit Card என்பது எது?","A credit card is..."],[["உங்கள் சொந்தப் பணம்","Your own money"],["வங்கியிடம் கடன் வாங்கும் வசதி","A borrowing facility from the bank"],["இலவசப் பணம்","Free money"],["சேமிப்புக் கணக்கு","A savings account"]],1,["வரம்புக்குள் கடன்; திருப்பிச் செலுத்த வேண்டும்.","It is borrowing within a limit that must be repaid."]],
+[["OTP-ஐ யாரிடம் பகிரலாம்?","Whom may you share your OTP with?"],[["வங்கி ஊழியர்","Bank staff"],["நண்பர்","A friend"],["யாரிடமும் இல்லை","Nobody"],["கூரியர் ஆள்","Courier"]],2,["உண்மையான வங்கி OTP கேட்காது.","A real bank never asks for your OTP."]],
+[["UPI-ல் பணம் பெற PIN தேவையா?","Do you need a PIN to receive money via UPI?"],[["ஆம்","Yes"],["இல்லை","No"],["சில நேரம்","Sometimes"],["QR இருந்தால்","If QR is used"]],1,["PIN அனுப்பும்போது மட்டுமே; 'பணம் பெற PIN' என்றால் மோசடி.","PIN is only for sending; 'enter PIN to receive' is a scam."]],
+[["CTC என்பது...","CTC is..."],[["கையில் வரும் சம்பளம்","In-hand salary"],["நிறுவனம் செலவிடும் மொத்தத் தொகை","Total cost to the company"],["வரி","Tax"],["போனஸ் மட்டும்","Only bonus"]],1,["கழிவுகளுக்கு முன் மொத்தத் தொகை.","It is the total before deductions."]],
+[["EMI-ல் உள்ளவை?","EMI includes..."],[["அசல் மட்டும்","Only principal"],["வட்டி மட்டும்","Only interest"],["அசல் + வட்டி","Principal + interest"],["வரி மட்டும்","Only tax"]],2,["ஒவ்வொரு EMI-லும் இரண்டும் உண்டு.","Each EMI has both parts."]],
+[["Minimum due மட்டும் செலுத்தினால்...","If you pay only the minimum due..."],[["வட்டி சேராது","No interest"],["மீதிக்கு வட்டி சேரும்","Interest applies on the rest"],["கடன் முடியும்","Debt ends"],["கார்டு இலவசம்","Card becomes free"]],1,["மீதித் தொகை வட்டியுடன் தொடரும்.","The balance continues with interest."]],
+[["பணம் இழந்தால் முதலில்...","If you lose money to fraud, first..."],[["காத்திருக்கவும்","Wait"],["வங்கி & 1930-ஐ அழைக்கவும்","Call your bank and 1930"],["மோசடிக்காரரிடம் பேசவும்","Talk to the fraudster"],["கார்டை வீசவும்","Throw the card"]],1,["விரைவான புகார் இழப்பைக் குறைக்கும்.","Quick reporting limits loss."]],
+[["Warranty கோர எது முக்கியம்?","What matters most for a warranty claim?"],[["பில்","The bill"],["பெட்டி நிறம்","Box colour"],["விளம்பரம்","The advert"],["விலை","Nothing"]],0,["பில் வாங்கியதற்கான சான்று.","The bill proves purchase."]],
+[["விலை உயரக் காரணம்?","Prices rise when..."],[["தேவை↑ வழங்கல்↓","Demand up, supply down"],["தேவை↓ வழங்கல்↑","Demand down, supply up"],["இரண்டும் சமம்","Both equal"],["ஒருபோதும் இல்லை","Never"]],0,["குறைவான பொருளுக்கு அதிகப் போட்டி.","More buyers chase fewer goods."]],
+[["ஒருவர் பார்வையைத் தவிர்த்தால் அவர் பொய் சொல்கிறார்?","Avoiding eye contact means lying?"],[["உறுதியாக ஆம்","Definitely"],["உறுதியாக இல்லை; சூழல் முக்கியம்","Not certain; context matters"],["எப்போதும்","Always"],["ஒருபோதும் இல்லை","Never"]],1,["உடல்மொழி நிச்சயமான சான்று அல்ல.","Body language is not proof."]]];
+
+/* ---------- UI TEXT ---------- */
+const T={home:["முகப்பு","Home"],topics:["தலைப்புகள்","Explore Topics"],daily:["இன்றைய அறிவு","Daily Knowledge"],quiz:["வினாடி வினா","Quizzes"],about:["எங்களைப் பற்றி","About"],start:["கற்கத் தொடங்கு","Start Learning"],
+tag:["படிப்பைத் தாண்டி, வாழ்க்கையைப் புரிந்துகொள்வோம்.","Beyond education, let us understand life."],
+h1:["உலகத்தைப் புரிந்துகொள்ளும் அறிவு, வாழ்க்கையை மாற்றும்.","Knowing how the world works can change your life."],
+hp:["வங்கிகள் எப்படி வேலை செய்கின்றன? பணத்தை எப்படிச் சேமிப்பது? மோசடிகளிலிருந்து எப்படித் தப்புவது? அன்றாட வாழ்க்கைக்குத் தேவையான அறிவை எளிய தமிழிலும் ஆங்கிலத்திலும் கற்றுக்கொள்ளுங்கள்.","How do banks work? How do you save? How do you avoid scams? Learn everyday knowledge in simple Tamil and English."],
+b1:["இப்போதே கற்கத் தொடங்கு","Start learning now"],b2:["தலைப்புகளை ஆராயுங்கள்","Explore topics"],
+feat:["வாழ்க்கைக்குத் தேவையான அறிவு","Knowledge for life"],more:["மேலும் அறிக","Learn more"],
+dh:["இன்றைய உலக அறிவு","Today's lesson"],full:["முழுமையாகப் படிக்க","Read the full lesson"],min:["நிமிடம்","min read"],
+qh:["நம் வாழ்க்கையில் அடிக்கடி வரும் கேள்விகள்","Questions we often face"],
+test:["உங்கள் அறிவைச் சோதியுங்கள்","Test your knowledge"],
+lessons:["பாடங்கள்","lessons"],search:["தேடுங்கள்…","Search lessons…"],all:["அனைத்து வகைகள்","All categories"],alll:["அனைத்து நிலைகள்","All levels"],
+beg:["தொடக்க நிலை","Beginner"],inter:["இடைநிலை","Intermediate"],none:["பொருந்தும் பாடம் இல்லை. வேறு சொல்லில் தேடுங்கள் அல்லது வடிகட்டிகளை மாற்றுங்கள்.","No lesson matches. Try another word or change the filters."],
+sec:[["அறிமுகம்","Introduction"],["எளிய வரையறை","Simple definition"],["இது ஏன் முக்கியம்?","Why it matters"],["இது எப்படி வேலை செய்கிறது?","How it works"],["இந்திய வாழ்க்கை எடுத்துக்காட்டு","Everyday Indian example"],["பொதுவான தவறுகள்","Common mistakes"],["பாதுகாப்பு மற்றும் வரம்புகள்","Safety and limits"],["சுருக்கம்","Summary"],["மூன்று கேள்வி வினா","Quick quiz"],["தொடர்புடைய பாடங்கள்","Related lessons"],["அதிகாரப்பூர்வ ஆதாரங்கள்","Official sources"]],
+mark:["நிறைவு செய்","Mark complete"],done:["நிறைவு ✓","Completed ✓"],bm:["சேமி ☆","Save ☆"],bmd:["சேமிக்கப்பட்டது ★","Saved ★"],
+prog:["உங்கள் முன்னேற்றம்","Your progress"],cont:["தொடர்ந்து படிக்க","Continue"],reset:["முன்னேற்றத்தை அழிக்க","Reset progress"],rconf:["அனைத்து சேமிப்பு மற்றும் முன்னேற்றம் அழியும். உறுதியா?","This clears bookmarks, progress and scores. Sure?"],
+note:["இந்தத் தகவல் உங்கள் உலாவியில் (localStorage) மட்டுமே சேமிக்கப்படும்; சாதனங்களுக்கிடையே ஒத்திசைவு ஆகாது.","Data is stored only in this browser (localStorage) and is not synced across devices."],
+next:["அடுத்தது","Next"],chk:["முடிவு","Result"],again:["மீண்டும் தொடங்கு","Restart"],score:["மதிப்பெண்","Score"],best:["சிறந்த மதிப்பெண்","Best score"],
+reviewed:["கடைசியாகச் சரிபார்த்தது: அக்டோபர் 2026","Last reviewed: October 2026"],
+fq:[["வங்கியில் Savings Account ஏன் தேவை?","Why do I need a savings account?"],["பணம் பாதுகாப்பாக இருக்கும், வட்டி கிடைக்கும், UPI/ATM வசதிகள் கிடைக்கும். வங்கி மற்றும் வட்டி விகிதங்கள் மாறும்; விவரங்களை வங்கியிடம் சரிபாருங்கள்.","Your money stays safe, may earn interest, and you get UPI/ATM access. Rates differ by bank; confirm with your bank."],
+["EMI என்றால் என்ன?","What is EMI?"],["கடனுக்காக மாதம் செலுத்தும் நிலையான தொகை — அசலும் வட்டியும் சேர்ந்தது. உதாரணம்: ₹60,000 கடன், 12 மாதம் × ₹5,500 = ₹66,000.","A fixed monthly loan payment of principal plus interest. Example: ₹60,000 loan, 12 × ₹5,500 = ₹66,000."],
+["OTP-ஐ ஏன் சொல்லக்கூடாது?","Why never share an OTP?"],["OTP சொன்னால் மோசடிக்காரர் உங்கள் பெயரில் பணம் எடுக்க முடியும். உண்மையான வங்கி/நிறுவனம் OTP கேட்காது.","With your OTP a fraudster can authorise payments as you. Genuine banks never ask."],
+["போலி ஆன்லைன் செய்தியை எப்படி அறிவது?","How to spot fake online news?"],["மூலத்தைப் பாருங்கள்; பல நம்பகமான செய்தி நிறுவனங்களில் உறுதி செய்யுங்கள்; அதிர்ச்சியூட்டும் தலைப்புகளையும் அவசரப் பகிர்வையும் சந்தேகியுங்கள்.","Check the source, confirm with several reliable outlets, and be wary of shocking headlines and forwards."],
+["CTC, Take-home-க்கு என்ன வித்தியாசம்?","CTC vs take-home?"],["CTC நிறுவனம் செலவிடும் மொத்தம்; Take-home கழிவுகளுக்குப் பின் கணக்கில் வருவது.","CTC is the company's total cost; take-home is what reaches your account after deductions."]],
+aboutT:["எங்களைப் பற்றி","About Ulaga Arivu"],
+aboutP:["உலக அறிவு என்பது பள்ளி, கல்லூரிகளில் பெரும்பாலும் கற்பிக்கப்படாத நடைமுறை வாழ்க்கை அறிவை எளிய தமிழில் வழங்கும் இலவசக் கல்வித் தளம். இது எந்த அரசு அல்லது நிதி நிறுவனத்துடனும் தொடர்புடையது அல்ல.","Ulaga Arivu is a free educational platform teaching practical life knowledge rarely covered in school. It is not affiliated with any government body or financial institution."],
+disc:["இந்தத் தளத்தின் உள்ளடக்கம் பொதுக் கல்விக்காக மட்டுமே. இது சட்ட, நிதி, மருத்துவ அல்லது தொழில்முறை ஆலோசனை அல்ல. விகிதங்கள், கட்டணங்கள், விதிகள் மாறக்கூடும்; அதிகாரப்பூர்வ ஆதாரங்களைச் சரிபாருங்கள்.","Content is for general education only and is not legal, financial, medical or professional advice. Rates, fees and rules change; verify with official sources."],
+priv:["இந்தத் தளம் கணக்கு, குக்கீ, பகுப்பாய்வு எதையும் பயன்படுத்தாது. உங்கள் புக்மார்க், முன்னேற்றம், மதிப்பெண் ஆகியவை உங்கள் உலாவியில் மட்டுமே சேமிக்கப்படும். வங்கி விவரங்கள், OTP, கடவுச்சொற்களை எங்கும் உள்ளிடாதீர்கள்.","This site uses no accounts, cookies or analytics. Bookmarks, progress and scores stay in your browser only. Never enter banking details, OTPs or passwords anywhere here."],
+privT:["தனியுரிமைக் கொள்கை","Privacy Policy"],discT:["மறுப்பு","Disclaimer"],contact:["தொடர்பு: (விரைவில் சேர்க்கப்படும்)","Contact: (placeholder, to be added)"],
+cats:["வகைகள்","Categories"],soon:["இந்த வகைக்கான பாடங்கள் விரைவில் சேர்க்கப்படும்.","Lessons for this category are coming soon."],
+bk:["சேமித்த பாடங்கள்","Saved lessons"]};
+
+/* ---------- STATE ---------- */
+let lang=0;try{lang=Number(localStorage.getItem("ua_lang"))===1?1:0}catch(e){}
+const store={get(k,d){try{return JSON.parse(localStorage.getItem("ua_"+k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem("ua_"+k,JSON.stringify(v))}catch(e){}}};
+const x=a=>a[lang],$=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const catOf=id=>CATS.find(c=>c[0]===id),lessonOf=id=>L.find(l=>l.id===id);
+let F={q:"",c:"",l:""},qz={i:0,s:0,a:false};
+
+function lessonCard(l){const c=catOf(l.cat);return `<a class="card" href="#/lesson/${l.id}"><div class="meta"><span class="pill">${c[1]} ${x(c[2])}</span> <span class="pill o">${x(T[l.lv?"inter":"beg"])}</span></div><h3>${esc(x(l.t))}</h3><p>${esc(x(l.i))}</p><span class="meta">${l.min} ${x(T.min)}</span> · <span class="more">${x(T.more)}</span>${store.get("done",[]).includes(l.id)?" ✓":""}</a>`}
+
+/* ---------- VIEWS ---------- */
+function hero(){return `<section class="hero"><div><span class="tag">${x(T.tag)}</span><h1>${x(T.h1)}</h1><p>${x(T.hp)}</p><div class="cta"><a class="btn" href="#/topics">${x(T.b1)}</a><a class="btn alt" href="#/topics">${x(T.b2)}</a></div></div>
+<svg viewBox="0 0 320 280" role="img" aria-label="${lang?"Illustration: globe, bank card and phone":"படம்: உலகம், வங்கி அட்டை, ஸ்மார்ட்போன்"}"><circle cx="160" cy="130" r="100" fill="#e0f2ef"/><circle cx="160" cy="130" r="70" fill="none" stroke="#0f766e" stroke-width="3"/><ellipse cx="160" cy="130" rx="30" ry="70" fill="none" stroke="#0f766e" stroke-width="3"/><path d="M90 130h140M100 95h120M100 165h120" stroke="#0f766e" stroke-width="2"/><rect x="30" y="170" width="130" height="80" rx="12" fill="#14213d" transform="rotate(-8 95 210)"/><rect x="48" y="196" width="30" height="22" rx="4" fill="#fbbf24" transform="rotate(-8 63 207)"/><rect x="215" y="120" width="70" height="130" rx="12" fill="#c2410c"/><rect x="222" y="134" width="56" height="94" rx="4" fill="#fff"/><text x="250" y="190" text-anchor="middle" font-size="26" fill="#0f766e">₹</text></svg></section>`}
+function home(){const d=L[Math.floor(Date.now()/864e5)%L.length];
+return hero()+`<section class="s"><h2>${x(T.feat)}</h2><div class="grid">${CATS.map(c=>`<a class="card" href="#/cat/${c[0]}"><div class="e" aria-hidden="true">${c[1]}</div><h3>${x(c[2])}</h3><p>${x(c[3])}</p><span class="more">${x(T.more)}</span></a>`).join("")}</div></section>
+<section class="s"><div class="daily"><span class="meta" style="color:#f3c9ae">${x(T.dh)} · ${d.min} ${x(T.min)}</span><h2>${esc(x(d.t))}</h2><p>${esc(x(d.i))}</p><a class="btn" href="#/lesson/${d.id}">${x(T.full)}</a></div></section>
+<section class="s qa"><h2>${x(T.qh)}</h2>${[0,2,4,6,8].map(i=>`<details><summary>${esc(x(T.fq[i]))}</summary><p>${esc(x(T.fq[i+1]))}</p></details>`).join("")}</section>
+<section class="s"><h2>${x(T.test)}</h2><div id="qbox" class="card"></div></section>`+progressBox()}
+function progressBox(){const dn=store.get("done",[]).length,p=Math.round(dn/L.length*100),last=lessonOf(store.get("last",""));
+const bm=store.get("bm",[]).map(lessonOf).filter(Boolean);
+return `<section class="s"><div class="card"><h3>${x(T.prog)}: ${dn}/${L.length}</h3><div class="prog" role="progressbar" aria-valuenow="${p}" aria-valuemin="0" aria-valuemax="100"><i style="width:${p}%"></i></div><p class="meta">${x(T.note)}</p>${last?`<a class="btn sm" href="#/lesson/${last.id}">${x(T.cont)}: ${esc(x(last.t))}</a> `:""}<button class="btn sm alt" id="rst">${x(T.reset)}</button>${bm.length?`<h3>${x(T.bk)}</h3><div class="grid">${bm.map(lessonCard).join("")}</div>`:""}</div></section>`}
+function topics(cat){const cs=cat?catOf(cat):null;
+return `<section class="s"><h1>${cs?cs[1]+" "+x(cs[2]):x(T.topics)}</h1><div class="tools"><input type="search" id="q" aria-label="${x(T.search)}" placeholder="${x(T.search)}" value="${esc(F.q)}"><select id="fc" aria-label="${x(T.all)}"><option value="">${x(T.all)}</option>${CATS.map(c=>`<option value="${c[0]}" ${(cat||F.c)===c[0]?"selected":""}>${x(c[2])}</option>`).join("")}</select><select id="fl" aria-label="${x(T.alll)}"><option value="">${x(T.alll)}</option><option value="0" ${F.l==="0"?"selected":""}>${x(T.beg)}</option><option value="1" ${F.l==="1"?"selected":""}>${x(T.inter)}</option></select></div><div id="res" class="grid" aria-live="polite"></div></section>`}
+function filt(cat){const q=F.q.trim().toLowerCase(),c=cat||F.c;
+const r=L.filter(l=>{const catData=catOf(l.cat);const searchable=[l.id,l.t,l.i,l.d,l.w,l.e,l.u,catData&&catData[2],catData&&catData[3]].flat(Infinity).join(" ").toLowerCase();return (!c||l.cat===c)&&(F.l===""||l.lv===Number(F.l))&&(!q||searchable.includes(q))});
+$("#res").innerHTML=r.length?r.map(lessonCard).join(""):`<p class="card">${x(c&&!L.some(l=>l.cat===c)?T.soon:T.none)}</p>`}
+function lesson(id){const l=lessonOf(id);if(!l)return `<p class="lesson">${x(T.none)}</p>`;store.set("last",id);
+const c=catOf(l.cat),S=T.sec,done=store.get("done",[]).includes(id),bm=store.get("bm",[]).includes(id);
+const rel=L.filter(o=>o.id!==id&&o.cat===l.cat).concat(L.filter(o=>o.id!==id&&o.cat!==l.cat)).slice(0,3);
+return `<article class="lesson"><div class="crumb"><a href="#/cat/${c[0]}">${c[1]} ${x(c[2])}</a></div><h1>${esc(x(l.t))}</h1><p class="meta">${l.min} ${x(T.min)} · ${x(T[l.lv?"inter":"beg"])} · ${x(T.reviewed)}</p>
+<button class="btn sm" id="dn">${x(done?T.done:T.mark)}</button> <button class="btn sm alt" id="bk">${x(bm?T.bmd:T.bm)}</button>
+<h2>${x(S[0])}</h2><p>${esc(x(l.i))}</p><h2>${x(S[1])}</h2><div class="box g">${esc(x(l.d))}</div><h2>${x(S[2])}</h2><p>${esc(x(l.w))}</p>
+<h2>${x(S[3])}</h2><ol>${l.s.map(s=>`<li>${esc(x(s))}</li>`).join("")}</ol>
+${l.tbl?`<div class="tw"><table><tr>${l.tbl[0].map(h=>`<th>${h}</th>`).join("")}</tr>${l.tbl.slice(1).map(r=>`<tr>${r.map(c=>`<td>${esc(Array.isArray(c)?x(c):c)}</td>`).join("")}</tr>`).join("")}</table></div>`:""}
+<h2>${x(S[4])}</h2><div class="box g">${esc(x(l.e))}</div><h2>${x(S[5])}</h2><ul>${l.m.map(s=>`<li>${esc(x(s))}</li>`).join("")}</ul>
+<h2>${x(S[6])}</h2><div class="box w">${esc(x(l.f))}</div><h2>${x(S[7])}</h2><p><b>${esc(x(l.u))}</b></p>
+<h2>${x(S[8])}</h2><div id="lq" class="card"></div>
+<h2>${x(S[9])}</h2><div class="grid">${rel.map(lessonCard).join("")}</div>
+${l.src.length?`<h2>${x(S[10])}</h2><ul>${l.src.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener noreferrer">${s[0]}</a></li>`).join("")}</ul>`:""}</article>`}
+function about(){return `<section class="lesson"><h1>${x(T.aboutT)}</h1><p>${x(T.aboutP)}</p><h2>${x(T.discT)}</h2><p>${x(T.disc)}</p></section>`}
+function simple(t,p){return `<section class="lesson"><h1>${x(t)}</h1><p>${x(p)}</p></section>`}
+
+/* ---------- QUIZ ---------- */
+function quiz(box,list,save){
+ const q=list[qz.i];
+ if(!q){const best=store.get("best",0);if(save&&qz.s>best)store.set("best",qz.s);
+  box.innerHTML=`<h3>${x(T.score)}: ${qz.s}/${list.length}</h3><p class="meta">${x(T.best)}: ${Math.max(store.get("best",0),save?qz.s:0)}/${Q.length}</p><button class="btn sm" id="qr">${x(T.again)}</button>`;
+  $("#qr").onclick=()=>{qz={i:0,s:0,a:false};quiz(box,list,save)};return}
+ box.innerHTML=`<p class="meta">${qz.i+1}/${list.length}</p><h3>${esc(x(q[0]))}</h3>${q[1].map((o,i)=>`<button class="opt" data-i="${i}">${esc(x(o))}</button>`).join("")}<div id="fb" aria-live="polite"></div>`;
+ box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if(qz.a)return;qz.a=true;const i=+b.dataset.i;if(i===q[2])qz.s++;
+  box.querySelectorAll(".opt").forEach((o,k)=>{o.disabled=true;if(k===q[2])o.classList.add("ok");else if(k===i)o.classList.add("no")});
+  $("#fb").innerHTML=`<div class="box ${i===q[2]?"g":"w"}">${esc(x(q[3]))}</div><button class="btn sm" id="nx">${x(qz.i+1<list.length?T.next:T.chk)}</button>`;
+  $("#nx").onclick=()=>{qz.i++;qz.a=false;quiz(box,list,save)}})}
+
+/* ---------- ROUTER ---------- */
+function render(){
+ const h=location.hash.replace(/^#\/?/,"").split("/"),r=h[0]||"home";let html="";qz={i:0,s:0,a:false};
+ try{
+ if(r==="home")html=home();else if(r==="topics")html=topics();else if(r==="cat")html=topics(h[1]);
+ else if(r==="lesson")html=lesson(h[1]);else if(r==="daily"){const d=L[Math.floor(Date.now()/864e5)%L.length];location.replace("#/lesson/"+d.id);return}
+ else if(r==="quiz")html=`<section class="s"><h1>${x(T.test)}</h1><div id="qbox" class="card"></div></section>`;
+ else if(r==="about")html=about();else if(r==="privacy")html=simple(T.privT,T.priv);else if(r==="disclaimer")html=simple(T.discT,T.disc);else html=home();
+ }catch(e){console.error("Ulaga Arivu render error:",e);html=`<section class="lesson"><h1>${lang?"Something went wrong":"சிறிய தொழில்நுட்பப் பிழை"}</h1><p>${lang?"Please return home and try again. If the issue continues, refresh the page.":"முகப்புக்குத் திரும்பி மீண்டும் முயற்சிக்கவும். சிக்கல் தொடர்ந்தால் பக்கத்தைப் புதுப்பிக்கவும்."}</p><a class="btn" href="#/">${lang?"Go home":"முகப்புக்குச் செல்லுங்கள்"}</a></section>`}
+ $("#main").innerHTML=html;document.documentElement.lang=lang?"en":"ta";
+ const activeLesson=r==="lesson"?lessonOf(h[1]):null;document.title=activeLesson?`${x(activeLesson.t)} | ULAGA ARIVU`:(lang?"ULAGA ARIVU | உலக அறிவு":"உலக அறிவு | ULAGA ARIVU");
+ chrome(r);
+ if(r==="topics"||r==="cat"){const cat=r==="cat"?h[1]:"";filt(cat);$("#q").oninput=e=>{F.q=e.target.value;filt(cat)};$("#fc").onchange=e=>{if(cat){if(e.target.value){F.c="";location.hash="#/cat/"+e.target.value}else{F.c="";location.hash="#/topics"}}else{F.c=e.target.value;filt(cat)}};$("#fl").onchange=e=>{F.l=e.target.value;filt(cat)}}
+ if($("#qbox"))quiz($("#qbox"),Q,true);
+ if(r==="lesson"){const id=h[1],l=lessonOf(id);if(l){
+  $("#dn").onclick=()=>{let d=store.get("done",[]);d=d.includes(id)?d.filter(i=>i!==id):d.concat(id);store.set("done",d);render()};
+  $("#bk").onclick=()=>{let d=store.get("bm",[]);d=d.includes(id)?d.filter(i=>i!==id):d.concat(id);store.set("bm",d);render()};
+  const idx={bank:[4,5,0],cards:[0,5,1],emi:[4,5,3],upi:[1,2,6],ctc:[3,4,0],warranty:[7,0,3],digilocker:[1,7,3],supply:[8,3,4],calm:[8,1,4]}[id]||[0,1,2];
+  const pick=idx.map(i=>Q[i]);qz={i:0,s:0,a:false};quiz($("#lq"),pick,false)}}
+ if($("#rst"))$("#rst").onclick=()=>{if(confirm(x(T.rconf))){["done","bm","last","best"].forEach(k=>{try{localStorage.removeItem("ua_"+k)}catch(e){}});render()}};
+ window.scrollTo(0,0);
+}
+function chrome(r){
+ const n=[["home","#/",T.home],["topics","#/topics",T.topics],["daily","#/daily",T.daily],["quiz","#/quiz",T.quiz],["about","#/about",T.about]];
+ $("#nav").innerHTML=n.map(a=>`<a href="${a[1]}" class="${a[0]===r?"on":""}">${x(a[2])}</a>`).join("")+`<a href="#/topics" aria-label="Search" onclick="setTimeout(()=>document.getElementById('q')&&document.getElementById('q').focus(),50)">🔍</a><button class="ic" id="lg" aria-label="Language">${lang?"தமிழ்":"EN"}</button><a class="btn sm" href="#/topics">${x(T.start)}</a>`;
+ $("#nav").classList.remove("open");$("#menu").setAttribute("aria-expanded","false");
+ $("#lg").onclick=()=>{lang=1-lang;try{localStorage.setItem("ua_lang",String(lang))}catch(e){}render()};
+ $("#foot").innerHTML=`<div class="fg"><div><b>உலக அறிவு | ULAGA ARIVU</b><p>${x(T.tag)}</p></div><div><b>${x(T.cats)}</b><br>${CATS.map(c=>`<a href="#/cat/${c[0]}">${x(c[2])}</a><br>`).join("")}</div><div><a href="#/privacy">${x(T.privT)}</a><br><a href="#/disclaimer">${x(T.discT)}</a><br><a href="#/about">${x(T.aboutT)}</a><p>${x(T.contact)}</p></div></div><p class="meta" style="color:#9aa6c2">© 2026 Ulaga Arivu. ${x(T.disc)}</p>`;
+}
+$("#menu").onclick=()=>{const o=$("#nav").classList.toggle("open");$("#menu").setAttribute("aria-expanded",String(o))};
+$("#nav").addEventListener("click",e=>{if(e.target.closest("a")){$("#nav").classList.remove("open");$("#menu").setAttribute("aria-expanded","false")}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){$("#nav").classList.remove("open");$("#menu").setAttribute("aria-expanded","false")}});
+window.addEventListener("hashchange",render);window.addEventListener("error",e=>console.error(e.message));render();
+</script>
+</body>
+</html>
